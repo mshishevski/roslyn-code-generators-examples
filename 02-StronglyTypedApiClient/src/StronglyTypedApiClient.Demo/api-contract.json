@@ -1,0 +1,26 @@
+{
+  "clientName": "BillingApiClient",
+  "namespace": "StronglyTypedApiClient.Demo.Generated",
+  "endpoints": [
+    {
+      "name": "CreateInvoice",
+      "method": "POST",
+      "route": "/api/invoices",
+      "request": {
+        "name": "CreateInvoiceRequest",
+        "properties": {
+          "customerId": "Guid",
+          "amount": "decimal",
+          "currency": "string"
+        }
+      },
+      "response": {
+        "name": "CreateInvoiceResponse",
+        "properties": {
+          "invoiceId": "Guid",
+          "status": "string"
+        }
+      }
+    }
+  ]
+}
